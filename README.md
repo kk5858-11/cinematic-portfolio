@@ -70,3 +70,4 @@ npm run dev
 - **WebGL** 只写在 `src/webgl/`，必须 `dynamic(..., { ssr: false })`。
 - **Shader** 只放在 `src/shaders/`，由 `webgl/materials` 引用。
 - 新对话请先读 [docs/HANDOFF.md](./docs/HANDOFF.md)。
+
