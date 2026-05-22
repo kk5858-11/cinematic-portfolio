@@ -53,7 +53,7 @@ npx vercel --prod
 
 ### 自动更新（推荐）
 
-连接 GitHub 后，每次 `git push` 会自动部署。步骤见 [docs/GITHUB-AUTO-DEPLOY.md](./docs/GITHUB-AUTO-DEPLOY.md)。
+连接 GitHub 后，每次 `git push` 会自动部署。仓库：[github.com/kk5858-11/cinematic-portfolio](https://github.com/kk5858-11/cinematic-portfolio)
 
 ## 本地运行
 
