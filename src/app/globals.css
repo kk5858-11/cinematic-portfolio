@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/base.css";
+@import "../styles/utilities.css";
+
+/* ─── Tailwind v4 theme bridge ─── */
+@theme inline {
+  /* Colors → bg-background, text-foreground, etc. */
+  --color-background: var(--ds-color-background);
+  --color-background-elevated: var(--ds-color-background-elevated);
+  --color-foreground: var(--ds-color-foreground);
+  --color-foreground-secondary: var(--ds-color-foreground-secondary);
+  --color-muted: var(--ds-color-muted);
+  --color-subtle: var(--ds-color-subtle);
+  --color-disabled: var(--ds-color-disabled);
+  --color-surface: var(--ds-color-surface);
+  --color-surface-hover: var(--ds-color-surface-hover);
+  --color-elevated: var(--ds-color-elevated);
+  --color-overlay: var(--ds-color-overlay);
+  --color-border: var(--ds-color-border);
+  --color-border-subtle: var(--ds-color-border-subtle);
+  --color-primary: var(--ds-color-primary);
+  --color-primary-foreground: var(--ds-color-primary-foreground);
+  --color-ring: var(--ds-color-ring);
+  --color-spotlight: var(--ds-color-spotlight);
+  --color-glow: var(--ds-color-glow);
+  --color-aurora: var(--ds-color-aurora);
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-display: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --text-hero: var(--ds-text-hero);
+  --text-display: var(--ds-text-display);
+  --text-h1: var(--ds-text-h1);
+  --text-h2: var(--ds-text-h2);
+  --text-h3: var(--ds-text-h3);
+  --text-h4: var(--ds-text-h4);
+  --text-lg: var(--ds-text-lg);
+  --text-caption: var(--ds-text-caption);
+
+  --leading-tight: var(--ds-leading-tight);
+  --leading-snug: var(--ds-leading-snug);
+  --leading-relaxed: var(--ds-leading-relaxed);
+
+  --tracking-tighter: var(--ds-tracking-tighter);
+  --tracking-tight: var(--ds-tracking-tight);
+  --tracking-snug: var(--ds-tracking-snug);
+  --tracking-caption: var(--ds-tracking-caption);
+
+  /* Spacing extensions */
+  --spacing-section: var(--ds-spacing-section-y);
+  --spacing-section-lg: var(--ds-spacing-section-y-lg);
+  --spacing-hero: var(--ds-spacing-hero-y);
+  --spacing-header: var(--ds-header-height);
+
+  /* Radius → rounded-card, rounded-button */
+  --radius-xs: var(--ds-radius-xs);
+  --radius-sm: var(--ds-radius-sm);
+  --radius-md: var(--ds-radius-md);
+  --radius-lg: var(--ds-radius-lg);
+  --radius-xl: var(--ds-radius-xl);
+  --radius-2xl: var(--ds-radius-2xl);
+  --radius-button: var(--ds-radius-button);
+  --radius-card: var(--ds-radius-card);
+  --radius-panel: var(--ds-radius-panel);
+
+  /* Shadows */
+  --shadow-xs: var(--ds-shadow-xs);
+  --shadow-sm: var(--ds-shadow-sm);
+  --shadow-md: var(--ds-shadow-md);
+  --shadow-lg: var(--ds-shadow-lg);
+  --shadow-inner: var(--ds-shadow-inner);
+  --shadow-glow: var(--ds-shadow-glow);
+
+  /* Z-index → z-header, z-overlay */
+  --z-index-webgl: var(--ds-z-webgl);
+  --z-index-atmosphere: var(--ds-z-atmosphere);
+  --z-index-content: var(--ds-z-content);
+  --z-index-sticky: var(--ds-z-sticky);
+  --z-index-header: var(--ds-z-header);
+  --z-index-dropdown: var(--ds-z-dropdown);
+  --z-index-overlay: var(--ds-z-overlay);
+  --z-index-drawer: var(--ds-z-drawer);
+  --z-index-transition: var(--ds-z-transition);
+  --z-index-modal: var(--ds-z-modal);
+  --z-index-toast: var(--ds-z-toast);
+  --z-index-cursor: var(--ds-z-cursor);
+
+  /* Easing → ease-smooth (transition-timing-function) */
+  --ease-smooth: var(--ds-ease-smooth);
+  --ease-enter: var(--ds-ease-enter);
+  --ease-exit: var(--ds-ease-exit);
+  --ease-in-out: var(--ds-ease-in-out);
+  --ease-apple: var(--ds-ease-apple);
+  --ease-subtle: var(--ds-ease-subtle);
+  --ease-emphasized: var(--ds-ease-emphasized);
+
+  /* Duration → duration-normal */
+  --duration-instant: var(--ds-duration-instant);
+  --duration-fast: var(--ds-duration-fast);
+  --duration-normal: var(--ds-duration-normal);
+  --duration-slow: var(--ds-duration-slow);
+  --duration-slower: var(--ds-duration-slower);
+  --duration-cinematic: var(--ds-duration-cinematic);
+  --duration-transition: var(--ds-duration-transition);
+}

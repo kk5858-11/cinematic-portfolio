@@ -1,0 +1,152 @@
+/**
+ * Design System — CSS custom properties
+ * Apple + Linear + OpenAI · monochrome · cinematic
+ */
+
+/* ─── Shared (theme-agnostic) ─── */
+:root {
+  /* Easing — cubic-bezier */
+  --ds-ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ds-ease-enter: cubic-bezier(0.22, 1, 0.36, 1);
+  --ds-ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --ds-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ds-ease-apple: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ds-ease-subtle: cubic-bezier(0.33, 1, 0.68, 1);
+  --ds-ease-emphasized: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Duration */
+  --ds-duration-instant: 150ms;
+  --ds-duration-fast: 350ms;
+  --ds-duration-normal: 700ms;
+  --ds-duration-slow: 1100ms;
+  --ds-duration-slower: 1400ms;
+  --ds-duration-cinematic: 1800ms;
+  --ds-duration-transition: 850ms;
+
+  /* Typography scale */
+  --ds-text-hero: clamp(3.25rem, 11vw, 8.5rem);
+  --ds-text-display: clamp(2.25rem, 5.5vw, 4.5rem);
+  --ds-text-h1: clamp(1.875rem, 4vw, 3rem);
+  --ds-text-h2: clamp(1.5rem, 3vw, 2.25rem);
+  --ds-text-h3: 1.5rem;
+  --ds-text-h4: 1.25rem;
+  --ds-text-lg: 1.125rem;
+  --ds-text-base: 1rem;
+  --ds-text-sm: 0.875rem;
+  --ds-text-xs: 0.75rem;
+  --ds-text-caption: 0.6875rem;
+
+  --ds-leading-tight: 1.1;
+  --ds-leading-snug: 1.25;
+  --ds-leading-normal: 1.5;
+  --ds-leading-relaxed: 1.625;
+
+  --ds-tracking-tighter: -0.04em;
+  --ds-tracking-tight: -0.03em;
+  --ds-tracking-snug: -0.02em;
+  --ds-tracking-caption: 0.08em;
+
+  /* Spacing — semantic */
+  --ds-spacing-section-y: clamp(4rem, 12vh, 8rem);
+  --ds-spacing-section-y-lg: clamp(6rem, 16vh, 10rem);
+  --ds-spacing-hero-y: clamp(5rem, 18vh, 9rem);
+  --ds-container-max: 1280px;
+  --ds-content-max: 65ch;
+  --ds-prose-max: 72ch;
+  --ds-header-height: 4rem;
+
+  /* Radius */
+  --ds-radius-xs: 0.25rem;
+  --ds-radius-sm: 0.375rem;
+  --ds-radius-md: 0.5rem;
+  --ds-radius-lg: 0.75rem;
+  --ds-radius-xl: 1rem;
+  --ds-radius-2xl: 1.25rem;
+  --ds-radius-full: 9999px;
+  --ds-radius-button: var(--ds-radius-md);
+  --ds-radius-card: var(--ds-radius-lg);
+  --ds-radius-panel: var(--ds-radius-xl);
+
+  /* Z-index */
+  --ds-z-webgl: 0;
+  --ds-z-atmosphere: 1;
+  --ds-z-content: 2;
+  --ds-z-sticky: 10;
+  --ds-z-header: 20;
+  --ds-z-dropdown: 30;
+  --ds-z-overlay: 40;
+  --ds-z-drawer: 50;
+  --ds-z-transition: 60;
+  --ds-z-modal: 70;
+  --ds-z-toast: 80;
+  --ds-z-cursor: 90;
+
+  /* ─── Dark theme (default) ─── */
+  --ds-color-background: #0a0a0b;
+  --ds-color-background-elevated: #0e0e10;
+  --ds-color-foreground: #fafafa;
+  --ds-color-foreground-secondary: #e4e4e7;
+  --ds-color-muted: #a1a1aa;
+  --ds-color-subtle: #71717a;
+  --ds-color-disabled: #52525b;
+  --ds-color-surface: #111113;
+  --ds-color-surface-hover: #161618;
+  --ds-color-elevated: #1a1a1d;
+  --ds-color-overlay: #222225;
+  --ds-color-border: #2a2a2e;
+  --ds-color-border-subtle: #1f1f23;
+  --ds-color-primary: #fafafa;
+  --ds-color-primary-foreground: #0a0a0b;
+  --ds-color-ring: rgba(250, 250, 250, 0.5);
+  --ds-color-spotlight: rgba(250, 250, 250, 0.06);
+  --ds-color-glow: rgba(250, 250, 250, 0.04);
+  --ds-color-aurora: rgba(228, 228, 231, 0.08);
+
+  --ds-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.25);
+  --ds-shadow-sm: 0 2px 8px -2px rgb(0 0 0 / 0.2);
+  --ds-shadow-md: 0 8px 24px -8px rgb(0 0 0 / 0.35);
+  --ds-shadow-lg: 0 16px 48px -12px rgb(0 0 0 / 0.45);
+  --ds-shadow-inner: inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+  --ds-shadow-glow: 0 0 0 1px rgb(255 255 255 / 0.08);
+
+  color-scheme: dark;
+}
+
+/* Light theme overrides */
+html.light,
+.light {
+  --ds-color-background: #fafafa;
+  --ds-color-background-elevated: #f4f4f5;
+  --ds-color-foreground: #0a0a0b;
+  --ds-color-foreground-secondary: #18181b;
+  --ds-color-muted: #52525b;
+  --ds-color-subtle: #71717a;
+  --ds-color-disabled: #a1a1aa;
+  --ds-color-surface: #ffffff;
+  --ds-color-surface-hover: #f4f4f5;
+  --ds-color-elevated: #ffffff;
+  --ds-color-overlay: #e4e4e7;
+  --ds-color-border: #e4e4e7;
+  --ds-color-border-subtle: #f4f4f5;
+  --ds-color-primary: #0a0a0b;
+  --ds-color-primary-foreground: #fafafa;
+  --ds-color-ring: rgba(10, 10, 11, 0.4);
+  --ds-color-spotlight: rgba(10, 10, 11, 0.04);
+  --ds-color-glow: rgba(10, 10, 11, 0.03);
+  --ds-color-aurora: rgba(24, 24, 27, 0.06);
+
+  --ds-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --ds-shadow-sm: 0 2px 8px -2px rgb(0 0 0 / 0.06);
+  --ds-shadow-md: 0 8px 24px -8px rgb(0 0 0 / 0.08);
+  --ds-shadow-lg: 0 16px 48px -12px rgb(0 0 0 / 0.1);
+  --ds-shadow-inner: inset 0 1px 0 0 rgb(255 255 255 / 0.8);
+  --ds-shadow-glow: 0 0 0 1px rgb(0 0 0 / 0.06);
+
+  color-scheme: light;
+}
+
+/* next-themes: explicit dark class (same as :root defaults) */
+html.dark,
+.dark {
+  color-scheme: dark;
+}
