@@ -51,6 +51,10 @@ src/
 npx vercel --prod
 ```
 
+### 自动更新（推荐）
+
+连接 GitHub 后，每次 `git push` 会自动部署。步骤见 [docs/GITHUB-AUTO-DEPLOY.md](./docs/GITHUB-AUTO-DEPLOY.md)。
+
 ## 本地运行
 
 ```bash
