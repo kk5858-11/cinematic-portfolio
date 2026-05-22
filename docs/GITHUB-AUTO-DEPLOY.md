@@ -21,12 +21,15 @@ cd "/Users/mac/cursor/个站雏形"
 
 ## 第三步：把 Vercel 连上 GitHub
 
+1. 打开 [Vercel → Login Connections](https://vercel.com/account/login-connections)，用 **Connect GitHub** 授权（只需一次）。
+2. 再在终端执行：
+
 ```bash
 cd "/Users/mac/cursor/个站雏形"
 npx vercel git connect --yes
 ```
 
-在 Vercel 网页里确认已连接 **cinematic-portfolio** 仓库。
+3. 在 [项目 Git 设置](https://vercel.com/kongtengfei81-6907s-projects/cinematic-portfolio/settings/git) 确认已连接仓库 **kk5858-11/cinematic-portfolio**。
 
 ## 以后怎么自动更新？
 
